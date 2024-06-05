@@ -1,0 +1,229 @@
+
+:root{
+    --white:#FDFFFC;
+    --red:#C1292E;
+}
+
+body,h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 40px;
+}
+
+a{
+    text-decoration: none;
+    color:var(--red);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0px 20px;
+}
+
+i{
+    margin: 15px 40px;
+    font-size: 2em;
+}
+
+.sec-1 h1{
+    width: 50%;
+    margin: 2em 2.5em;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #2C2C54;
+}
+
+.sec-1 p{
+    width: 50%;
+    margin: -1em 4.5em;
+    font-size: 1.7em;
+    line-height: 1.5em;
+}
+
+.sec-1 span{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 3px 5px;
+}
+
+.sec-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px 50px;
+}
+
+.sec-2 img{
+    width: 50%;
+}
+
+.sec-3 h1{
+    width: 50%;
+    margin: 0em 2em;
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: em; 
+    color: #2C2C54; 
+}
+
+.sec-3 p{
+    width: 50%;
+    margin: 1.7em 3.7em;
+    font-size: 1.7em;
+    line-height: 1.5em;
+}
+.sec-3 span{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 3px 5px;
+}
+
+.sec-4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+    align-items: center;
+}
+
+.sec-4 h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color:#2C2C54 ;
+}
+
+.sec-4 img{
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.sec-4 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 25px 3px rgba(0, 0, 0, 0.2);
+    filter: grayscale(0%);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    background: #2C2C54;
+    color: white;
+}
+
+.logo-container h1{
+    font-size: 4em;
+    margin-bottom: 20px;
+    background: #2C2C54;
+    color: white;
+}
+
+.logo-container p{
+    width: 400px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: sans-serif;
+    background: #2C2C54;
+    color: white;
+}
+
+.about-company{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #2C2C54;
+    color: white;
+}
+
+.about-company .container{
+    margin-right: 40px;
+}
+
+.about-company .container h1{
+    margin-bottom: 20px;
+    background: #2C2C54;
+    color: white;
+}
+
+.about-company .container p{
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    background: #2C2C54;
+    color: white;
+}
+
+/* responsive design */
+
+@media screen and (max-width:800px){
+    .sec-1 h1{
+        width: 100%;
+        font-size: 2em;
+        margin: 2em auto;
+    }
+
+    i{
+        font-size: 1.7em;
+    }
+
+    .sec-1 p{
+        width: 100%;
+        font-size: 1.2em;
+        margin: -1em auto;
+    }
+
+    .sec-2 img{
+        width: 100%;
+    }
+
+    .sec-3 h1{
+        width: 100%;
+        font-size: 2em;
+        margin: 2em auto;
+    }
+
+    .sec-3 p{
+        width: 100%;
+        font-size: 1.2em;
+        margin: -1em auto;
+    }
+
+    .sec-4 img{
+        margin: 10px auto;
+    }
+
+    .sec-4 h2{
+        font-size: 1.5em;
+        margin: 40px auto;
+    }
+
+    .logo-container h1{
+        font-size: 3em;
+    }
+
+    .logo-container p{
+        font-size: 1em;
+    }
+    
+    .about-company .container h1{
+        font-size: 1.7em;
+    }
+
+    .about-company .container p{
+        font-size: .9em;
+    }
+
+    footer{
+        margin: 20px 0px;
+    }
+}
